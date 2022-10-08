@@ -1,0 +1,13 @@
+library(tidymodels)
+library(visdat)
+library(tidyr)
+library(car)
+library(pROC)
+library(ggplot2)
+library(vip)
+library(rpart.plot)
+library(DALEXtra)
+### Setting up directory and combining datasets for data prep
+setwd("D:\\IITK Data Analytics\\R\\HumanResources-Classification-R-Project\\")
+df_train=read.csv('hr_train.csv')
+df_test=read.csv('hr_test.csv')
